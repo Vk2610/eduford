@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- Hero section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Assets/Images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <span class="fa material-symbols-outlined" onclick="hideMenu()">
+                    close
+                </span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+            </div>
+            <span class="fa material-symbols-outlined" onclick="showMenu()">
+                menu
+            </span>
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About Us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the fastest growing University</h1>
+                <p>
+                    "At eduford, we're all about helping you succeed. Our professors are top-notch, our campus is filled with cool stuff like labs and libraries, and we welcome students from all walks of life. Whether you're into science, art, business, or something else, there's something here for you. We believe in learning by doing, so get ready to roll up your sleeves and dive in. Come join our community of learners and dreamers at eduford where your future begins!"
+                    </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="Assets/Images/about.jpg">
+
+            </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>At Eduford, we help you succeed with great teachers, cool stuff to learn, and a friendly place for everyone. Join us!</p>
+        <div class="icons">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+    </section>
+
+
+    <script>
+        // JAVASCRIPT FOR TOGGLE MENU
+        let navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
