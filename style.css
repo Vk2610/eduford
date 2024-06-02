@@ -370,6 +370,18 @@ h3 {
     }
 }
 
+/* footage */
+
+.footage {
+    width: 80%;
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footage video {
+    width: 100%;
+}
 /* Testimonials */
 
 .testimonials {
